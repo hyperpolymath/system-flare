@@ -1,6 +1,6 @@
 # System Flare
 
-A framework for the absolute stop. Part of the **ambientops** platform.
+A framework for the absolute stop. Part of the **AmbientOps** platform.
 
 ## Usage
 Run the bash script provided in `scripts/shells/flare.sh`. 
