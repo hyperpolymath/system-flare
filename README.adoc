@@ -24,10 +24,6 @@ system-flare/
 
 ## Usage
 Run the bash script provided in `scripts/shells/flare.sh`. 
-For other shells (fish, zsh, nushell, etc.), see the `scripts/shells/` directory.
 
 ## Deployment
 Prioritise nerdctl for isolated testing of the halt sequence.
-
-chmod +x scripts/shells/flare.sh
-echo "System Flare repository constructed successfully."
