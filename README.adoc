@@ -2,27 +2,6 @@
 
 A framework for the absolute stop. Part of the **AmbientOps** platform.
 
-## Usage
-Run the bash script provided in `scripts/shells/flare.sh`. 
-For other shells (fish, zsh, nushell, etc.), see the `scripts/shells/` directory.
-
-## Deployment
-Prioritise Podman for isolated testing of the halt sequence.
-EOF
-
-chmod +x scripts/shells/flare.sh
-echo "System Flare repository constructed successfully."
-
-Key Features of this Rhodium Setup
-
-    V-Language Integration: The src/main.v is ready for compilation to a native binary with zero dependencies.
-
-    Nickel-Centric: All logic parameters are externalised in config/flare.ncl, ensuring you can change the "Absolute Stop" thresholds without recompiling.
-
-    Oxford British English: All documentation and comments follow your preferred linguistic standard.
-
-    Deployment Ready: The structure is prepared for Podman and cross-platform (Linux, Minix, macOS) use.
-
 system-flare/
 ├── .asdf/                # Version management
 ├── config/
@@ -43,3 +22,12 @@ system-flare/
 ├── README.md             # Primary documentation (Bash centric)
 └── LICENSE               # AGPL-3.0-or-later
 
+## Usage
+Run the bash script provided in `scripts/shells/flare.sh`. 
+For other shells (fish, zsh, nushell, etc.), see the `scripts/shells/` directory.
+
+## Deployment
+Prioritise nerdctl for isolated testing of the halt sequence.
+
+chmod +x scripts/shells/flare.sh
+echo "System Flare repository constructed successfully."
