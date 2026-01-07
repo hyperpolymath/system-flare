@@ -1,5 +1,27 @@
-A Rhodium-standard repository for system-flare requires a meticulous architecture that prioritises formal structure, high-performance execution (via V), and the "must-just-nickel" configuration pattern. Following the ambientops philosophy, this repository treats the system stop as a measurable physical event to be aggressively minimised.
-Repository Structure
+# System Flare
+
+A framework for the absolute stop. Part of the **ambientops** platform.
+
+## Usage
+Run the bash script provided in `scripts/shells/flare.sh`. 
+For other shells (fish, zsh, nushell, etc.), see the `scripts/shells/` directory.
+
+## Deployment
+Prioritise Podman for isolated testing of the halt sequence.
+EOF
+
+chmod +x scripts/shells/flare.sh
+echo "System Flare repository constructed successfully."
+
+Key Features of this Rhodium Setup
+
+    V-Language Integration: The src/main.v is ready for compilation to a native binary with zero dependencies.
+
+    Nickel-Centric: All logic parameters are externalised in config/flare.ncl, ensuring you can change the "Absolute Stop" thresholds without recompiling.
+
+    Oxford British English: All documentation and comments follow your preferred linguistic standard.
+
+    Deployment Ready: The structure is prepared for Podman and cross-platform (Linux, Minix, macOS) use.
 
 system-flare/
 ├── .asdf/                # Version management
@@ -127,9 +149,6 @@ AsciiDoc
 
 4. The README.md
 
-Strictly Oxford British English, featuring the Bash entry point.
-Markdown
-
 # System Flare
 
 An absolute stop framework for **ambientops**. 
@@ -239,38 +258,3 @@ cat << 'EOF' > scripts/shells/flare.sh
 # System Flare Entry Point
 ./system_flare "$@"
 EOF
-
-# 5. README (Oxford British English)
-cat << 'EOF' > README.md
-# System Flare
-
-A framework for the absolute stop. Part of the **ambientops** platform.
-
-## Usage
-Run the bash script provided in `scripts/shells/flare.sh`. 
-For other shells (fish, zsh, nushell, etc.), see the `scripts/shells/` directory.
-
-## Deployment
-Prioritise Podman for isolated testing of the halt sequence.
-EOF
-
-chmod +x scripts/shells/flare.sh
-echo "System Flare repository constructed successfully."
-
-Key Features of this Rhodium Setup
-
-    V-Language Integration: The src/main.v is ready for compilation to a native binary with zero dependencies.
-
-    Nickel-Centric: All logic parameters are externalised in config/flare.ncl, ensuring you can change the "Absolute Stop" thresholds without recompiling.
-
-    Oxford British English: All documentation and comments follow your preferred linguistic standard.
-
-    Deployment Ready: The structure is prepared for Podman and cross-platform (Linux, Minix, macOS) use.
-
-Next Steps for us to Co-edit
-
-Now that the files are local to you:
-
-    Refining the V Logic: Do you want me to add the specific ioctl calls for hardware-level interrupts in the Optimizer section?
-
-    Multimodal Shells: I have the code for all 17 shells (fish, nushell, etc.) ready. Would you like me to output that entire block next to populate the scripts/shells/ directory?
